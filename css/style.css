@@ -1,0 +1,704 @@
+/** Global **/
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+@keyframes animation-shadow {
+    0% {
+        
+        box-shadow: 10px 10px 35px 10px rgb(221, 73, 5);
+    }
+    50% {
+        
+        box-shadow: 20px 20px 45px 15px rgb(221, 73, 5);
+    }
+    100% {
+        
+        box-shadow: 10px 10px 35px 10px rgb(221, 73, 5);
+    }
+}
+body {
+    font-family: "lato", sans-serif;
+    font-size: 20px;
+    line-height: 3rem;
+
+}
+img {
+    max-width: 100%;
+
+}
+/** Header **/
+header {
+    height: 80vh;
+    width: 100%;
+}
+.encabezado {
+    padding: 0 5px;
+    display: flex;
+    justify-content: space-between;
+    height: 25%;
+    background: linear-gradient(to top, #fdc830, #f37335);
+}
+.encabezado_nav {
+    display: flex;
+    align-items: center;
+    
+}
+.encabezado_nav--enlace {
+    text-decoration: none;
+    padding: 0 25px;
+    color: #ffffff;
+    border-bottom: 2px solid transparent;
+    transition-property: color;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+    text-decoration: none;
+    display: flex;
+    justify-items: center;
+}
+.encabezado_nav--enlace:hover {
+    color: #0085ad; 
+    background-color: #48a9c5;
+}
+.lista {
+    display: flex;
+    list-style: none;
+}
+.lista_link {
+    padding: 0px 20px;
+    text-decoration: none;
+    display: flex;
+    justify-items: center;
+}
+.logo {
+    height: 60%;
+    margin-top: 2rem;
+ }
+ label {
+     margin: 0 40px 0 0;
+     font-size: 2rem;
+     line-height: 2.2rem;
+     display: none;
+ }
+ .encabezado_menu a {
+     text-decoration: none;
+     color: #ffffff;
+     margin: 0 10px;
+     line-height: 70px;
+     cursor: pointer;
+ }
+ #menu-hamburguesa {
+     display: none;
+ }
+
+
+ .portada {
+    background-image: url(../imagenes/portada1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 90%;
+    
+
+}
+.titulo {
+    text-align: center;
+    color: #393e46;
+    padding: 80px 0px;
+    font-size: 64px;
+    font-family: 'Monoton', cursive;
+
+}
+
+ /** Main   **/
+.background-1 {
+    background: linear-gradient(to top, #fdc830, #f37335);
+    
+}
+#artistas {
+    padding-top: 5%;
+    text-align: center;
+    font-family: 'Monoton', cursive;
+    color: #393e46;
+    font-size: 3rem;
+}
+.contenedor-artistas {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.card {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    height: 65vh;
+    width: 30%;
+    margin-top: 5%;
+    animation-name: animation-shadow;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+.contenedor-artistas_descr {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    bottom: 0;
+    background: linear-gradient(to top, #fdc830, #f37335);
+}
+.card-bruno {
+    background-image: url(../imagenes/bruno-mars.jpg);
+    border-radius: 10px;
+}
+.card-postmalone {
+    background-image: url(../imagenes/post-malone.jpg);
+    border-radius: 10px;
+}
+.card-garrix {
+    background-image: url(../imagenes/MartinGarrix.jpg);
+    border-radius: 10px;
+}
+.card-eminem {
+    background-image: url(../imagenes/eminem.jpg);
+    border-radius: 10px;
+}
+.card-taylorSwift {
+    background-image: url(../imagenes/Taylor-Swift-.jpg);
+    border-radius: 10px;
+}
+.card-justin {
+    background-image: url(../imagenes/justin.png);
+    border-radius: 10px; 
+}
+.contenedor-artistas_descr__titulo-artistas {
+    color: #111111;
+    font-family: 'Monoton', cursive;
+    font-size: 1.6rem;
+}
+/** Imagenes **/
+#imagenes {
+    padding: 5% 0;
+    font-size: 3rem;
+    text-align: center;
+    font-family: 'Monoton', cursive;
+}
+.container-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.container_grid-item {
+    border: .3rem solid #f37335;
+    border-radius: .3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    
+}
+.container_grid-item__img {
+    height: 16rem;
+    width: 100%;
+    animation-name: animation-shadow;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+/** Videos **/
+#videos {
+    padding: 4rem 0;
+    text-align: center;
+    font-size: 3rem;
+    color: #111111;
+    font-family: 'Monoton', cursive;
+
+}
+.container-videos {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    
+}
+iframe {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    animation-name: animation-shadow;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+/** Información **/
+#informacion {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    font-size: 3rem;
+    font-family: 'Monoton', cursive;
+    color: #393e46;
+    text-align: center;
+}
+.container-informacion {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.container-informacion__title {
+    font-family: 'Monoton', cursive;
+    color: #393e46;
+    font-size: 2.4rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.container-informacion__parrafo {
+
+    font-family: 'Monoton', cursive;
+    color: #111111;
+    font-size: 2rem;
+}
+.container-informacion__img {
+    border-radius: 3rem;
+    width: 400px;
+    height: 340px;
+    animation-name: animation-shadow;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+/** Footer **/
+.container-footer {
+    display: flex;
+    justify-content: space-between;
+    
+}
+.redes {
+    font-family: 'Monoton', cursive;
+    color: #f4f4f4;
+    font-size: 3rem;
+    text-align: center;
+    padding: 1rem 2rem;
+}
+.icon-ig {
+    font-size: 3rem;
+    text-align: center;
+    padding: 1rem 2rem;
+}
+.icon-ig:hover {
+    color: #4c2882;
+    
+}
+.icon-yt {
+    font-size: 3rem;
+    text-align: center;
+    padding: 1rem 2rem;
+}
+.icon-yt:hover {
+    color: #e71837;
+}
+.icon-tw {
+    font-size: 3rem;
+    text-align: center;
+    padding: 1rem 2rem;
+}
+.icon-tw:hover {
+    color: #0085ad; 
+}
+@media screen and (max-width: 1025px) {
+    header {
+        height: 100vh;
+        width: 100%;
+    }
+
+    label {
+        display: block;
+        cursor: pointer;
+        font-size: 6rem;
+        margin-top: 1rem;
+    }
+    .encabezado_nav{
+        display: block;
+        margin-top: 2rem;
+    }
+    .encabezado_menu {
+        width: 100%;
+        text-align: center;
+        display: none;
+        
+    }
+    .encabezado_menu a {
+          display: block;
+          border-bottom: 1px solid #00bcd4;
+          margin: 0;
+          font-size: 3rem;
+          text-align: center;
+          color: #111111;
+          line-height: 6rem;
+          padding-left: 7rem;
+    }
+    .encabezado {
+        background-color: linear-gradient(to top, #fdc830, #f37335);
+        height: 100vh;
+    }
+    #menu-hamburguesa:checked ~ .encabezado_menu {
+        display: block;
+        padding-left: 3rem;
+    }
+    #menu-hamburguesa {
+        display: none;
+    }
+    .logo {
+        height: 0px;
+        width: 0px;
+    }
+    .lista_link {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem 1rem;
+    }
+    .titulo {
+        font-size: 0px;
+        line-height: 0px;
+    }
+    .portada {
+    background-attachment: inherit;
+    background-image: none;
+    }
+    #artistas {
+        font-size: 6rem;
+        padding: 4rem 0;
+    }
+
+    .card {
+        margin: 1rem;
+        height: 60vh;
+        width: 40%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .contenedor-artistas_descr__titulo-artistas {
+        font-size: 2rem;
+        padding: 4rem 2rem;
+    }
+    #imagenes {
+        padding: 20% 0px;
+        font-size: 4rem;
+
+    }
+    .container-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    #videos {
+        font-size: 4rem;
+        line-height: 6rem;
+    }
+    iframe {
+        width: 100%;
+        
+
+    }
+    #informacion {
+        font-size: 4rem;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+    .container-informacion__title {
+        font-size: 3rem;
+    }
+    
+    .container-informacion__parrafo {
+        font-size: 2.4rem;
+    }
+    .redes {
+        font-size: 2rem;
+
+    }
+    .icon {
+       font-size: 3.3rem;
+       margin-top: 1.8rem;
+       padding: 0;
+    }
+    .container-videos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .container_grid-item__img {
+        height: 25rem;
+    }
+    
+    
+
+}
+
+@media screen and (max-width: 769px) {
+    header {
+        height: 100vh;
+        width: 100%;
+    }
+
+    label {
+        display: block;
+        cursor: pointer;
+        font-size: 4rem;
+    }
+    .encabezado_nav{
+        display: block;
+        margin-top: 2rem;
+    }
+    .encabezado_menu {
+        width: 100%;
+        text-align: center;
+        display: none;
+        
+    }
+    .encabezado_menu a {
+          display: block;
+          border-bottom: 1px solid #00bcd4;
+          margin: 0;
+          font-size: 2.6rem;
+          text-align: center;
+          color: #111111;
+          line-height: 6rem;
+          padding-left: 7rem;
+    }
+    .encabezado {
+        background-color: linear-gradient(to top, #fdc830, #f37335);
+        height: 100vh;
+    }
+    #menu-hamburguesa:checked ~ .encabezado_menu {
+        display: block;
+        padding-left: 3rem;
+    }
+    #menu-hamburguesa {
+        display: none;
+    }
+    .logo {
+        height: 0px;
+        width: 0px;
+    }
+    .lista_link {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem 1rem;
+    }
+    .titulo {
+        font-size: 0px;
+        line-height: 0px;
+    }
+    .portada {
+    background-attachment: inherit;
+    background-image: none;
+    }
+    #artistas {
+        font-size: 3rem;
+    }
+
+    .card {
+        margin: 1rem;
+        height: 40vh;
+        width: 40%;
+    }
+    .contenedor-artistas_descr__titulo-artistas {
+        font-size: 2rem;
+        padding: 0px;
+    }
+    #imagenes {
+        padding: 20% 0px;
+        font-size: 3rem;
+
+    }
+    .container-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    #videos {
+        font-size: 3rem;
+    }
+    iframe {
+        width: 80%;
+        height: 380px;
+
+    }
+    #informacion {
+        font-size: 3rem;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+    .container-informacion__title {
+        font-size: 2.6rem;
+    }
+    
+    .container-informacion__parrafo {
+        font-size: 2.3rem;
+    }
+    .redes {
+        font-size: 2rem;
+
+    }
+    .icon {
+       font-size: 3rem;
+       margin-top: 1.8rem;
+       padding: 0;
+    }
+    .container-videos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    
+
+}
+
+
+
+@media screen and (max-width: 481px) {
+    header {
+        height: 100vh;
+        width: 100%;
+    }
+
+    label {
+        display: block;
+        cursor: pointer;
+    }
+    .encabezado_nav{
+        display: block;
+        margin-top: 2rem;
+    }
+    .encabezado_menu {
+        width: 100%;
+        text-align: center;
+        display: none;
+        
+    }
+    .encabezado_menu a {
+          display: block;
+          border-bottom: 1px solid #00bcd4;
+          margin: 0;
+          font-size: 1.4rem;
+          text-align: center;
+          color: #111111;
+          line-height: 2.6rem;
+          padding-left: 0;
+    }
+    .encabezado {
+        background-color: linear-gradient(to top, #fdc830, #f37335);
+        height: 100vh;
+    }
+    #menu-hamburguesa:checked ~ .encabezado_menu {
+        display: block;
+        
+    }
+    #menu-hamburguesa {
+        display: none;
+    }
+    .logo {
+        height: 0px;
+        width: 0px;
+    }
+    .lista_link {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem 1rem;
+    }
+    .titulo {
+        font-size: 0px;
+        line-height: 0px;
+    }
+    .portada {
+    background-attachment: inherit;
+    background-image: none;
+    }
+    #artistas {
+        font-size: 1.6rem;
+    }
+
+    .card {
+        margin: 1rem;
+        height: 80vh;
+        width: 100%;
+    }
+    .contenedor-artistas_descr__titulo-artistas {
+        font-size: 1rem;
+        padding: 0px;
+    }
+    #imagenes {
+        padding: 20% 0px;
+        font-size: 2rem;
+
+    }
+    .container-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    #videos {
+        font-size: 1.6rem;
+    }
+    iframe {
+        width: 80%;
+        height: 380px;
+
+    }
+    #informacion {
+        font-size: 2rem;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+    .container-informacion__title {
+        font-size: 1.6rem;
+    }
+    
+    .container-informacion__parrafo {
+        font-size: 1.4rem;
+    }
+    .redes {
+        font-size: 1.2rem;
+
+    }
+    .icon {
+       font-size: 1.6rem;
+       margin-top: 1.8rem;
+       padding: 0;
+    }
+    .container-videos {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    
+
+}
+@media screen and (max-width: 300px) {
+    .portada {
+        background-image: none;
+    }
+    
+    .logo {
+        width: 0px;
+        height: 0px;
+    }
+    
+    .encabezado_menu a {
+        line-height: 5rem;
+        font-size: 1rem;
+    }
+    .encabezado_nav {
+        margin-top: 0px;
+    }
+    .lista_link {
+        padding: 0;
+    }
+    .container-videos {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+
+
+
+
