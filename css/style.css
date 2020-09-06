@@ -99,7 +99,7 @@ header {
     background-image: url(../imagenes/portada1.jpg);
     background-position: center;
     background-size: cover;
-    background-attachment: fixed!important;
+    background-attachment: fixed;
     width: 100%;
     height: 90%;
     
