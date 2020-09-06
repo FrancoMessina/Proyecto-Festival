@@ -96,7 +96,7 @@ header {
 
 
  .portada {
-    background-image: url(../imagenes/portada1.jpg);
+    background-image: url(../imagenes/portada1.jpg) no-repeat;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
