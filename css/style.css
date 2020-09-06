@@ -202,7 +202,6 @@ header {
     
 }
 .container_grid-item__img {
-    height: 16rem;
     width: 100%;
     animation-name: animation-shadow;
     animation-duration: 3s;
