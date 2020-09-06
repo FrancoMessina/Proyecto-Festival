@@ -73,8 +73,9 @@ header {
     justify-items: center;
 }
 .logo {
-    height: 60%;
+    height: 15vh;
     margin-top: 2rem;
+    
  }
  label {
      margin: 0 40px 0 0;
@@ -98,7 +99,7 @@ header {
     background-image: url(../imagenes/portada1.jpg);
     background-position: center;
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment: fixed!important;
     width: 100%;
     height: 90%;
     
@@ -107,7 +108,7 @@ header {
 .titulo {
     text-align: center;
     color: #393e46;
-    padding: 80px 0px;
+    padding-top: 3em;
     font-size: 64px;
     font-family: 'Monoton', cursive;
 
@@ -134,8 +135,8 @@ header {
     position: relative;
     background-position: center;
     background-size: cover;
-    height: 65vh;
-    width: 30%;
+    min-height: 65vh;
+    min-width: 30%;
     margin-top: 5%;
     animation-name: animation-shadow;
     animation-duration: 3s;
@@ -177,11 +178,12 @@ header {
 .contenedor-artistas_descr__titulo-artistas {
     color: #111111;
     font-family: 'Monoton', cursive;
-    font-size: 1.6rem;
+    font-size: 1.6rem; 
+    padding: 0rem;
 }
 /** Imagenes **/
 #imagenes {
-    padding: 5% 0;
+    padding: 5% 0px ;
     font-size: 3rem;
     text-align: center;
     font-family: 'Monoton', cursive;
@@ -307,7 +309,9 @@ iframe {
 .icon-tw:hover {
     color: #0085ad; 
 }
-@media screen and (max-width: 1025px) {
+/* Correcciones escritorio **/
+
+@media only screen and (max-width: 1025px) {
     header {
         height: 100vh;
         width: 100%;
@@ -316,8 +320,8 @@ iframe {
     label {
         display: block;
         cursor: pointer;
-        font-size: 6rem;
-        margin-top: 1rem;
+        font-size: 4rem;
+        margin-top: 0rem;
     }
     .encabezado_nav{
         display: block;
@@ -327,64 +331,61 @@ iframe {
         width: 100%;
         text-align: center;
         display: none;
+        background-color:  #393b44; 
+        margin-top: 1rem;
+
         
     }
     .encabezado_menu a {
-          display: block;
-          border-bottom: 1px solid #00bcd4;
-          margin: 0;
-          font-size: 3rem;
-          text-align: center;
-          color: #111111;
-          line-height: 6rem;
-          padding-left: 7rem;
+        display: block;
+        border-bottom: 1px solid #8d93ab;
+        margin: 0;
+        font-size: 2rem;
+        text-align: center;
+        color: #fff;
+        line-height: 2rem;
+    }
+          
     }
     .encabezado {
-        background-color: linear-gradient(to top, #fdc830, #f37335);
-        height: 100vh;
+        height: 20vh;
     }
     #menu-hamburguesa:checked ~ .encabezado_menu {
         display: block;
-        padding-left: 3rem;
+        
     }
     #menu-hamburguesa {
         display: none;
     }
-    .logo {
-        height: 0px;
-        width: 0px;
-    }
+ 
     .lista_link {
         display: flex;
         flex-direction: column;
         padding: 1rem 1rem;
     }
     .titulo {
-        font-size: 0px;
-        line-height: 0px;
+        font-size: 3.5rem;
+        color: #fff;
+        padding-top: 20rem;
+        text-align: center;
+        
     }
     .portada {
     background-attachment: inherit;
-    background-image: none;
     }
     #artistas {
         font-size: 6rem;
-        padding: 4rem 0;
+        padding: 4rem 0px;
     }
 
     .card {
         margin: 1rem;
         height: 60vh;
-        width: 40%;
         display: flex;
         flex-wrap: wrap;
     }
-    .contenedor-artistas_descr__titulo-artistas {
-        font-size: 2rem;
-        padding: 4rem 2rem;
-    }
+    
     #imagenes {
-        padding: 20% 0px;
         font-size: 4rem;
 
     }
@@ -426,15 +427,12 @@ iframe {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
-    .container_grid-item__img {
-        height: 25rem;
-    }
     
     
 
-}
 
-@media screen and (max-width: 769px) {
+
+@media only screen and (max-width: 769px) {
     header {
         height: 100vh;
         width: 100%;
@@ -443,7 +441,9 @@ iframe {
     label {
         display: block;
         cursor: pointer;
-        font-size: 4rem;
+        font-size: 7rem;
+        margin-top: 1rem;
+        
     }
     .encabezado_nav{
         display: block;
@@ -453,45 +453,49 @@ iframe {
         width: 100%;
         text-align: center;
         display: none;
+        margin-top: 6rem;
+        margin-left: 5rem;
+        background-color: #393b44;
+        margin-top: 2rem;
+
         
     }
     .encabezado_menu a {
           display: block;
-          border-bottom: 1px solid #00bcd4;
+          border-bottom: 1px solid #8d93ab;
           margin: 0;
-          font-size: 2.6rem;
+          font-size: 1rem;
           text-align: center;
-          color: #111111;
-          line-height: 6rem;
-          padding-left: 7rem;
+          color: #fff;
+          line-height: 1rem;
+    
+          
     }
     .encabezado {
-        background-color: linear-gradient(to top, #fdc830, #f37335);
-        height: 100vh;
+        /** background-color: linear-gradient(to top, #fdc830, #f37335); **/
+        height: 20vh;;
     }
     #menu-hamburguesa:checked ~ .encabezado_menu {
         display: block;
-        padding-left: 3rem;
+        
     }
     #menu-hamburguesa {
         display: none;
     }
-    .logo {
-        height: 0px;
-        width: 0px;
-    }
+  
     .lista_link {
         display: flex;
         flex-direction: column;
         padding: 1rem 1rem;
     }
     .titulo {
-        font-size: 0px;
-        line-height: 0px;
+        font-size: 4rem;
+        padding-top: 25rem;
+        color: #fff;
+        
     }
     .portada {
     background-attachment: inherit;
-    background-image: none;
     }
     #artistas {
         font-size: 3rem;
@@ -502,12 +506,8 @@ iframe {
         height: 40vh;
         width: 40%;
     }
-    .contenedor-artistas_descr__titulo-artistas {
-        font-size: 2rem;
-        padding: 0px;
-    }
+    
     #imagenes {
-        padding: 20% 0px;
         font-size: 3rem;
 
     }
@@ -555,7 +555,7 @@ iframe {
 
 
 
-@media screen and (max-width: 481px) {
+@media only screen and (max-width: 481px) {
     header {
         height: 100vh;
         width: 100%;
@@ -564,6 +564,8 @@ iframe {
     label {
         display: block;
         cursor: pointer;
+        font-size: 5rem;
+        margin-top: 0px;
     }
     .encabezado_nav{
         display: block;
@@ -573,21 +575,24 @@ iframe {
         width: 100%;
         text-align: center;
         display: none;
+        margin-top: 3rem;
+        margin-left: 3rem;
+        background-color: #393b44;
         
     }
     .encabezado_menu a {
           display: block;
-          border-bottom: 1px solid #00bcd4;
+          border-bottom: 1px solid #8d93ab;
           margin: 0;
-          font-size: 1.4rem;
+          font-size: 1rem;
           text-align: center;
-          color: #111111;
-          line-height: 2.6rem;
+          color: #ffffff;
+          line-height: 1rem;
           padding-left: 0;
     }
     .encabezado {
-        background-color: linear-gradient(to top, #fdc830, #f37335);
-        height: 100vh;
+        /** background-color: linear-gradient(to top, #fdc830, #f37335); **/
+        height: 20vh;
     }
     #menu-hamburguesa:checked ~ .encabezado_menu {
         display: block;
@@ -596,22 +601,20 @@ iframe {
     #menu-hamburguesa {
         display: none;
     }
-    .logo {
-        height: 0px;
-        width: 0px;
-    }
+ 
     .lista_link {
         display: flex;
         flex-direction: column;
         padding: 1rem 1rem;
     }
     .titulo {
-        font-size: 0px;
-        line-height: 0px;
+        font-size: 2.6rem;
+        padding-top: 18rem;
+        text-align: center;
+        color: #ffffff;
     }
     .portada {
     background-attachment: inherit;
-    background-image: none;
     }
     #artistas {
         font-size: 1.6rem;
@@ -622,12 +625,8 @@ iframe {
         height: 80vh;
         width: 100%;
     }
-    .contenedor-artistas_descr__titulo-artistas {
-        font-size: 1rem;
-        padding: 0px;
-    }
+    
     #imagenes {
-        padding: 20% 0px;
         font-size: 2rem;
 
     }
@@ -672,18 +671,27 @@ iframe {
     
 
 }
-@media screen and (max-width: 300px) {
-    .portada {
-        background-image: none;
+@media only screen and (max-width: 300px) {
+
+    label {
+        margin-top: 3rem;
+        font-size: 4rem;
+    }
+    .titulo {
+        font-size: 2rem;
+        padding-top: 18rem;
+        text-align: center;
+        color: #fff;
     }
     
-    .logo {
-        width: 0px;
-        height: 0px;
-    }
     
+    .encabezado_menu {
+        margin-top: 2.8rem;
+        background-color: #393b44;
+        margin-left: 3rem;
+    }
     .encabezado_menu a {
-        line-height: 5rem;
+        line-height: 3rem;
         font-size: 1rem;
     }
     .encabezado_nav {
@@ -692,6 +700,7 @@ iframe {
     .lista_link {
         padding: 0;
     }
+    
     .container-videos {
         display: flex;
         flex-wrap: wrap;
